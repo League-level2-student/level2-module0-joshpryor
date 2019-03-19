@@ -8,7 +8,7 @@ public class _01_RobotRace {
 	// 1. make a main method
 	public static void main(String[] args) {
 		// 2. create an array of 5 robots.
-		Robot[] rob = new Robot[5];
+		Robot[] rob = new Robot[9];
 		Random ran = new Random();
 		boolean top = false;
 		// 3. use a for loop to initialize the robots.
@@ -25,7 +25,7 @@ public class _01_RobotRace {
 			 * rob[4].moveTo(500, 500);
 			 */
 		}
-
+                          // 1, josh  2, mark  3, nolin  4, max  5, sam  6,  jackie 
 		// 5. use another for loop to iterate through the array and make each robot move
 		// a random amount less than 50
 
@@ -36,6 +36,8 @@ public class _01_RobotRace {
 				int rolly = ran.nextInt(50);
 
 				rob[i].move(rolly);
+				//rob[i].turn(7);
+				
 				if (rob[i].getY() <= 0) {
 					top = true;
 					rob[i].move(-50);
